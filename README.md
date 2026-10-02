@@ -15,70 +15,44 @@ This repository is part of my journey toward becoming an **AI Engineer**, focusi
 
 ## 📚 Topics Covered
 
-| No. | Topic                    | Status         |
-| --- | ------------------------ | -------------- |
-| 01  | Variables and Data Types | 🟡 In Progress |
-| 02  | Operators                | ⬜ Not Started  |
-| 03  | String Manipulation      | ⬜ Not Started  |
-| 04  | Control Flow (if/else)   | ⬜ Not Started  |
-| 05  | Lists                    | ⬜ Not Started  |
-| 06  | Tuples                   | ⬜ Not Started  |
-| 07  | Dictionaries             | ⬜ Not Started  |
-| 08  | Sets                     | ⬜ Not Started  |
-| 09  | Loops (for/while)        | ⬜ Not Started  |
-| 10  | Integrated Challenges    | ⬜ Not Started  |
+python-fundamentals-practice
 
-## 📂 Repository Structure
+README.md
 
-python-fundamentals-practice/
-│
-├── 01_variables_data_types/
-│   ├── practice.py
-│   └── README.md
-│
-├── 02_operators/
-│   ├── practice.py
-│   └── README.md
-│
-├── 03_strings/
-│   ├── practice.py
-│   └── README.md
-│
-├── 04_control_flow/
-│   ├── practice.py
-│   └── README.md
-│
-├── 05_lists/
-│   ├── practice.py
-│   └── README.md
-│
-├── 06_tuples/
-│   ├── practice.py
-│   └── README.md
-│
-├── 07_dictionaries/
-│   ├── practice.py
-│   └── README.md
-│
-├── 08_sets/
-│   ├── practice.py
-│   └── README.md
-│
-├── 09_loops/
-│   ├── practice.py
-│   └── README.md
-│
-├── 10_integrated_challenges/
-│   ├── student_dashboard.py
-│   ├── expense_manager.py
-│   └── quiz_app.py
-│
-└── README.md
-```
+01_basics/
+
+variables_operators
+
+strings
+
+control_flow
+
+02_data_structures/
+
+lists
+
+tuples
+
+dictionaries
+
+sets
+
+03_loops/
+
+loops
+
+04_mini_projects/
+
+student_dashboard
+
+expense_tracker
+
+quiz_app
+
 
 ## 🛠️ Technologies
 
-* **Language:** Python 3
+* **Language:** Python 4
 * **Version Control:** Git
 * **Code Hosting:** GitHub
 * **Editor:** VS Code

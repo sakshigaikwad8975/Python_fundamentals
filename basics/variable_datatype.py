@@ -38,7 +38,8 @@ print("Quotient: ", quotient)
 
 temp = 100
 fahrenheit = (temp * 1.8) +32
-print("Conversion of ", temp, "degree Celcius to Fahrenheit is", fahrenheit, "degree Fahrenheit." )
+kelvin = temp +273.15
+print("Conversion of ", temp, "degree Celsius to Fahrenheit is", fahrenheit, "degree Fahrenheit and Kelvin is", kelvin, "degree Kelvin." )
 
 #Q4 Swapping values
 # Swap the values of two variables without using a third variable. Then solve it again using a temporary variable.
@@ -72,3 +73,5 @@ print("Subtotal of 2nd item: ", subtotal2, "USD")
 print("Subtotal of 3rd item: ", subtotal3, "USD")
 print("Total bill of 3 items is: ", total_bill, "USD")
 print("Average item price is: ", avg_bill, "USD")
+
+#Q6

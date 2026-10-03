@@ -74,4 +74,37 @@ print("Subtotal of 3rd item: ", subtotal3, "USD")
 print("Total bill of 3 items is: ", total_bill, "USD")
 print("Average item price is: ", avg_bill, "USD")
 
-#Q6
+#Q6 Time converter
+# Store a number of seconds and convert it into hours, minutes, and remaining seconds.
+total_seconds = 5600
+hours = total_seconds // 3600
+remaining_seconds = total_seconds % 3600
+minutes = remaining_seconds //60
+seconds = remaining_seconds % 60
+
+print("Hours:", hours)
+print("Minutes:", minutes)
+print("Remaining seconds:", seconds)
+
+#Q7 Type conversion
+# Take a numeric string and convert it into a integer and a float. Perform calculations with both.
+
+num_string = input("Enter a number: ")
+int_val = int(num_string)
+float_val = float(num_string)
+
+#integer calculations
+print("Addition: ", int_val + 20)
+print("Substraction: ", int_val - 12)
+print("Multiplication: ", int_val *10)
+print("Division: ", int_val / 10)
+print("Floor division: ", int_val // 5)
+print("Remainder: ", int_val % 15)
+
+#float calculations
+print("Addition: ", float_val + 20)
+print("Substraction: ", float_val - 12)
+print("Multiplication: ", float_val *10)
+print("Division: ", float_val / 10)
+print("Floor division: ", float_val // 5)
+print("Remainder: ", float_val % 15)

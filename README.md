@@ -52,7 +52,7 @@ quiz_app
 
 ## 🛠️ Technologies
 
-* **Language:** Python 4
+* **Language:** Python 3
 * **Version Control:** Git
 * **Code Hosting:** GitHub
 * **Editor:** VS Code

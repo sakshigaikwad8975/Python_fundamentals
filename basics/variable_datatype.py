@@ -108,3 +108,23 @@ print("Multiplication: ", float_val *10)
 print("Division: ", float_val / 10)
 print("Floor division: ", float_val // 5)
 print("Remainder: ", float_val % 15)
+
+#Q8 Salary breakdown
+# Store a monthly salary. Calculate annual salary, a 10% bonus, and the final annual income.
+
+
+monthly_salary = 20000
+annual_salary = monthly_salary * 12
+bonus = annual_salary  * 0.10
+final_salary = annual_salary + bonus
+
+print("Monthly Salary: ", monthly_salary)
+print("Annual Salary: ", annual_salary)
+print("Bonus: ", bonus)
+print("Final Salary: ", final_salary)
+
+#Q9 Data Summary
+# Given variables representing a student's name, marks in three subjects, and attendance percentage, generate a formatted summary with total marks, average, and eligibility status based on attendance.
+
+#Q10 Mini financial tracker
+#Store income and expenses in separate variables. Calculate savings, savings rate, and projected annual savings. Handle a zero-income case.

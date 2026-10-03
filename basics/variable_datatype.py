@@ -45,7 +45,7 @@ print("Conversion of ", temp, "degree Celcius to Fahrenheit is", fahrenheit, "de
 
 num1 = 6
 num2 = 7
-num1, num2 = 7, 6
+num1, num2 = num2, num1
 print (num1, " ", num2)
 
 #Q5 Shopping Bill
@@ -65,7 +65,7 @@ subtotal3 = price3 * quantity3
 
 total_bill = subtotal1 + subtotal2 + subtotal3
 
-avg_bill = price1 + price2 + price3 /3
+avg_bill = (price1 + price2 + price3) /3
 
 print("Subtotal of 1st item: ", subtotal1, "USD")
 print("Subtotal of 2nd item: ", subtotal2, "USD")

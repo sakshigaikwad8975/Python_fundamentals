@@ -46,7 +46,9 @@ print("Conversion of ", temp, "degree Celsius to Fahrenheit is", fahrenheit, "de
 
 num1 = 6
 num2 = 7
-num1, num2 = num2, num1
+temp = num1
+num1 = num2
+num2 = temp
 print (num1, " ", num2)
 
 #Q5 Shopping Bill

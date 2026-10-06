@@ -152,13 +152,13 @@ else:
 
 income = 50000
 spend = 20000
-savings = income - spend
-saving_rate = (savings/income)*100
-annual_saving = savings * 12
-
 if income == 0:
     print("No saving")
 else:
+    savings = income - spend
+    saving_rate = (savings/income)*100
+    annual_saving = savings * 12
+
     print("Monthly income- ", income, "USD")
     print("Monthly expenses- ", spend, "USD")
     print("Savings- ", savings, "USD")

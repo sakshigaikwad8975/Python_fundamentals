@@ -126,5 +126,39 @@ print("Final Salary: ", final_salary)
 #Q9 Data Summary
 # Given variables representing a student's name, marks in three subjects, and attendance percentage, generate a formatted summary with total marks, average, and eligibility status based on attendance.
 
+name = "Sakshi"
+python = 89
+java = 93
+c = 87
+attendance_percent = 98
+
+total_marks = python + java + c
+avg_marks = total_marks /3
+percent =  (total_marks/300) * 100
+print("Name - ", name)
+print("Total marks - ", total_marks)
+print("Percentage- ", percent)
+print("Average- ", avg_marks)
+
+if attendance_percent >= 75:
+    print("Eligible")
+else:
+    print("Not eligible")
+
 #Q10 Mini financial tracker
 #Store income and expenses in separate variables. Calculate savings, savings rate, and projected annual savings. Handle a zero-income case.
+
+income = 50000
+spend = 20000
+savings = income - spend
+saving_rate = (savings/income)*100
+annual_saving = savings * 12
+
+if income == 0:
+    print("No saving")
+else:
+    print("Monthly income- ", income, "USD")
+    print("Monthly expenses- ", spend, "USD")
+    print("Savings- ", savings, "USD")
+    print("Saving Rates- ", saving_rate)
+    print("Auunal Saving- ", annual_saving, "USD")

@@ -1,7 +1,7 @@
 #Q1 Even or odd
 #Use the modulo operator to determine whether a given integer is even or odd.
 
-number = 10
+number = int(input("Enter a number: "))
 if number % 2 == 0:
     print(number, "is a even number.")
 else:
@@ -10,9 +10,9 @@ else:
 #Q2 Number comparison
 #Given three numbers, use comparison operators to identify the largest without using max().
 
-num1 = 5
-num2 = 7
-num3 = 4
+num1 = int(input("Enter 1st number: "))
+num2 = int(input("Enter 2nd number: "))
+num3 = int(input("Enter 3rd number: "))
 if num1 >= num2 and num1 >= num3:
     print(num1, "is greatest")
 elif num2 >= num1 and num2 >= num1:
@@ -31,7 +31,7 @@ print("Final price of item after", discount, "percent discount is", final_price,
 #Q4 Divisilbility checker
 #  Check whether a number is divisible by both 3 and 5, either one, or neither.
 
-nums = 15
+nums =int(input("Enter a number: "))
 if nums % 3 and nums % 5 ==0:
     print("Given number", nums, "is divisible by 5 and 3.")
 elif nums % 3 or nums % 5 == 0:
@@ -42,17 +42,41 @@ else:
 #Q5 Age eligibility
 # Check whether a person is eligible for a driving license based on age and whether they have a learner's permit.
 
+age = int(input("Enter your age: "))
+permit = input("Do you have learners perimit: ")
+if age >= 18:
+    if permit == "Yes"or "yes":
+        print("Eligible for learner's permit.")
+    print("Eligible for driving license.")
+
 #Q6 Range validation 
 # Check whether a number lies between 10 and 100 inclusive using chained comparisons.
 
+value = int(input("Enter a number: "))
+if 10 < value < 100:
+    print("Given number lies between 10 to 100.")
 #Q7 Bitwise exploration
 # Given two integers, display their bitwise AND, OR, XOR, left shift, and right shift results.
 
 #Q8 Password conditions
 # Check whether a password meets a minimum length requirement and whether it contains a specific required character.
 
+min_len = 10
+req_char = "@"
+password = ("Enter a password: ")
+
+if len(password) < 10:
+    print(("Your password must be 10 digits."))
+elif req_char not in password:
+    print(req_char, "is missing.")
+else:
+    print("Correct password!!!")
 #Q9 Leap year logic
 # Determine whether a year is a leap year using logical and comparison operators.
-
+year = int(input("Enter a year: "))
+if (year % 4 == 0 or year % 100 != 0) and (year % 400 == 0):
+    print(year, "is a leap year!!!")
+else:
+    print(year, "is not a leap year.")
 #Q10 Electricity bill
 # Calculate electricity charges using slab rates, such as one rate for the first 100 units, another for the next 100, and a third rate for units beyond 200.

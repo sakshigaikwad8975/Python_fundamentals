@@ -3,9 +3,9 @@
 
 number = int(input("Enter a number: "))
 if number % 2 == 0:
-    print(number, "is a even number.")
+    print(number, "is an even number.")
 else:
-    print(number, "is a odd number.")
+    print(number, "is an odd number.")
 
 #Q2 Number comparison
 #Given three numbers, use comparison operators to identify the largest without using max().
@@ -23,10 +23,10 @@ else:
 #Q3 Discount calculator
 # Calculate the final price of a product after a discount percentage using arithmetic operators.
 
-# price = 1000
-# discount = 9
-# final_price = price((100- discount )/100)
-# print("Final price of item after", discount, "percent discount is", final_price, "USD.")
+price = 1000
+discount = 9
+final_price = price * ((100- discount )/100)
+print("Final price of item after", discount, "percent discount is", final_price, "USD.")
 
 #Q4 Divisilbility checker
 #  Check whether a number is divisible by both 3 and 5, either one, or neither.
@@ -44,16 +44,17 @@ else:
 
 age = int(input("Enter your age: "))
 permit = input("Do you have learners perimit: ")
-if age >= 18:
-    if permit == "Yes"or "yes":
-        print("Eligible for learner's permit.")
+if age >= 18 and (permit == "Yes" or permit == "yes"):
+    print("Eligible for learner's permit.")
     print("Eligible for driving license.")
+else:
+    print("Not eligible for driving liscense and learner's permit.")
 
 #Q6 Range validation 
 # Check whether a number lies between 10 and 100 inclusive using chained comparisons.
 
 value = int(input("Enter a number: "))
-if 10 < value < 100:
+if 10 <= value <= 100:
     print("Given number lies between 10 to 100.")
 else:
     print("Given number is not in range 10 to 100.")
@@ -67,8 +68,8 @@ min_len = 10
 req_char = "@"
 password = input("Enter a password: ")
 
-if len(password) < 10:
-    print(("Your password must be 10 digits."))
+if len(password) < min_len:
+    print(("Your password must contain at least 10 characters."))
 elif req_char not in password:
     print(req_char, "is missing.")
 else:
@@ -76,7 +77,7 @@ else:
 #Q9 Leap year logic
 # Determine whether a year is a leap year using logical and comparison operators.
 year = int(input("Enter a year: "))
-if (year % 4 == 0 or year % 100 != 0) or (year % 400 == 0):
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print(year, "is a leap year!!!")
 else:
     print(year, "is not a leap year.")

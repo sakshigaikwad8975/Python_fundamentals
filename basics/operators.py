@@ -80,3 +80,16 @@ else:
     print(year, "is not a leap year.")
 #Q10 Electricity bill
 # Calculate electricity charges using slab rates, such as one rate for the first 100 units, another for the next 100, and a third rate for units beyond 200.
+
+used_units = int(input("Enter used units: "))
+first_unit = 2
+sec_unit = 4
+third_unit = 5
+if used_units <= 100:
+    first_price = used_units * first_unit
+    print("Price of 1st slab is ", first_price)
+elif 100 < used_units < 200:
+    second_unit = used_units - 100
+    sec_price = second_unit * sec_unit
+    final_sec_price = first_price + sec_price
+    

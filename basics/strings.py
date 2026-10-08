@@ -1,8 +1,36 @@
 #Q1 Name formatter
 # Take a full name and print it in uppercase, lowercase, title case, and with leading/trailing spaces removed.
 
+#Q2
+name = input("Enter your full name: ")
+print("Full name in upper case: ", name.upper())
+print("Full name in lower case: ", name.lower())
+print("Full name in title case: ", name.title())
+print("Full name without leading/trailing spaces: ", name.strip())
+
+
 #Q2 Character counter 
 # Count the number of vowels, consonants, digits, and spaces in a given string.
+text = "sakshi was born in 2005"
+vowels = 0
+consonants = 0
+digits = 0
+spaces = 0
+vowel_ref = "AEIOUaeiou"
+for char in text:
+    if char in vowel_ref:
+        vowels += 1
+    elif char.isalpha():
+        consonants += 1
+    elif char.isdigit():
+        digits += 1
+    elif char.isspace():
+        spaces += 1
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+print("Digits:", digits)
+print("Spaces:", spaces)
 
 #Q3 Reverse a string 
 # Reverse a string using slicing, then solve it again without slicing.

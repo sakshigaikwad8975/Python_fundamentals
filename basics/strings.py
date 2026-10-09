@@ -93,11 +93,14 @@ print(first_initial + "." + last_initial + ".")
 # Take a string of exactly eight characters. Print the first three characters, the last three characters, and the four characters in the middle.
 
 string = "princess"
+
 first = string[0:3]
-second = string[5:]
-third = string[4:]
-secret_code = first + second + third
-print("Your secret code is:", secret_code)
+middle = string[3:5]
+last = string[5:8]
+
+print("First three characters:", first)
+print("Middle two characters:", middle)
+print("Last three characters:", last)
 
 #Q13 Palindrome checker
 # Take a word and determine whether it reads the same forward and backward. Print whether it is a palindrome. Assume the input contains lowercase letters only.

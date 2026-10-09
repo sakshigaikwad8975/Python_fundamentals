@@ -1,5 +1,6 @@
 #Q1 Name formatter
 # Take a full name and print it in uppercase, lowercase, title case, and with leading/trailing spaces removed.
+
 name = input("Enter your full name: ")
 print("Full name in upper case: ", name.upper())
 print("Full name in lower case: ", name.lower())
@@ -9,6 +10,7 @@ print("Full name without leading/trailing spaces: ", name.strip())
 
 #Q2 Character counter 
 # Count the number of vowels, consonants, digits, and spaces in a given string.
+
 text = "sakshi was born in 2005"
 vowels = 0
 consonants = 0
@@ -32,6 +34,7 @@ print("Spaces:", spaces)
 
 #Q5 Personal introduction 
 # Take your first name and last name as input. Print your full name, then print its length.
+
 first_name = input("Enter you first name: ")
 last_name = input("Enter you last name: ")
 full_name = first_name + " " + last_name
@@ -40,11 +43,26 @@ print("Your full name is ", full_name, "with the length of", len(full_name),"cha
 #Q6 First and last character
 # Take a word as input. Print its first character, last character, and length.
 
+word = input("Enter a word: ")
+first_char = word[0]
+last_char = word[len(word)-1]
+word_len = len(word)
+print("First character is", first_char, ", last character is", last_char, "and length of", word, "is", word_len )
+
+
 #Q7 String repetition
 # Take a word as input and print it five times on the same line using the repetition operator.
 
+word_1 = input("Enter a word: ")
+repeated_word = word_1 * 5
+print(repeated_word)
 #Q8 Username creator 
 # Take a first name and birth year as input. Combine them to create a username, such as sakshi2005. Assume the birth year is entered as a string.
+firstName = input("Enter your first name: ")
+birth_yr = input("Enter your birth year: ")
+username = firstName + birth_yr
+print("Your username is: ", username)
+
 
 #Q9 Reverse a word
 # Take a word as input and print it backward using slicing.

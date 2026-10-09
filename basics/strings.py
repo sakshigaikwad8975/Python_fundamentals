@@ -69,20 +69,49 @@ print("Your username is: ", username)
 # Take a word as input and print it backward using slicing.
 
 word_3 = input("Enter a word: ")
-reverse_word = word[0, len(word_3), -1]
+reverse_word = word_3[::-1]
 print("Reversed word of", word_3, "is", reverse_word)
 
 #Q10 Extract the middle
 # Take a word with an odd number of characters and print only its middle character. For example, python should produce t.
 
+word4 = "total"
+middle_index = len(word4) // 2
+middle_char = word4[middle_index]
+print("Middle character is: ",middle_char)
+
 #Q11 Initials generator
 # Take a first name and a last name as separate inputs. Print their initials. For example, Sakshi and Gaikwad should produce S.G.
+
+firstName = input("Enter your first name: ")
+lastName = input("Enter your last name: ")
+first_initial = firstName[0]
+last_initial = lastName[0]
+print(first_initial + "." + last_initial + ".")
 
 #Q12 Slice a secret code
 # Take a string of exactly eight characters. Print the first three characters, the last three characters, and the four characters in the middle.
 
+string = "princess"
+first = string[0:3]
+second = string[5:]
+third = string[4:]
+secret_code = first + second + third
+print("Your secret code is:", secret_code)
+
 #Q13 Palindrome checker
 # Take a word and determine whether it reads the same forward and backward. Print whether it is a palindrome. Assume the input contains lowercase letters only.
 
+pal_word = input("Enter a word: ")
+reversed_word = pal_word[::-1]
+if pal_word == reversed_word:
+    print("Yes, the word is palindrome.")
+else:
+    print("No, the word is not palindrome")
+
 #Q14 Character-by-character display
 # Take a word as input and print each character on a separate line using a for loop and indexing.
+
+word5 = input("Enter a word: ")
+for word in word5:
+    print(word)

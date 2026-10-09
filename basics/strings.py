@@ -34,24 +34,38 @@ print("Spaces:", spaces)
 
 #Q3 Reverse a string 
 # Reverse a string using slicing, then solve it again without slicing.
+word = input("Enter a string: ")
+sliced = word[0::-1]
+reversed_str = word.__reversed__
+print("Reversed string using slicing: ", sliced)
 
-#Q4 Palindrome checker
-# Check whether a word is a palindrome, ignoring capitalization.
 
-#Q5 Word counter 
-# Count the number of words in a sentence and print each word on a separate line.
+#Q4 Personal introduction 
+# Take your first name and last name as input. Print your full name, then print its length.
 
-#Q6 Username generator
-# Given a first name, last name, and birth year, generate a username using string operations.
+#Q5 First and last character
+# Take a word as input. Print its first character, last character, and length.
 
-#Q7 Email validator 
-# Perform basic validation of an email address by checking for an @ symbol, a domain, and a dot after the @ symbol.
+#Q6 String repetition
+# Take a word as input and print it five times on the same line using the repetition operator.
 
-#Q8 Character frequency
-# Count how many times a particular character appears in a string without using count().
+#Q7 Username creator 
+# Take a first name and birth year as input. Combine them to create a username, such as sakshi2005. Assume the birth year is entered as a string.
 
-#Q9 Text analyzer 
-# Analyze a paragraph to find its word count, longest word, shortest word, and most frequent character, ignoring spaces and capitalization.
+#Q8 Reverse a word
+# Take a word as input and print it backward using slicing.
 
-#Q10 Caeser cipher
-# Implement a Caesar cipher that shifts alphabetic characters by a given number while preserving uppercase and lowercase. Handle wrapping around the alphabet.
+#Q9 Extract the middle
+# Take a word with an odd number of characters and print only its middle character. For example, python should produce t.
+
+#Q10 Initials generator
+# Take a first name and a last name as separate inputs. Print their initials. For example, Sakshi and Gaikwad should produce S.G.
+
+#Q11 Slice a secret code
+# Take a string of exactly eight characters. Print the first three characters, the last three characters, and the four characters in the middle.
+
+#Q12 Palindrome checker
+# Take a word and determine whether it reads the same forward and backward. Print whether it is a palindrome. Assume the input contains lowercase letters only.
+
+#Q13 Character-by-character display
+# Take a word as input and print each character on a separate line using a for loop and indexing.

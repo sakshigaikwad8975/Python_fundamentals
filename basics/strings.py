@@ -58,6 +58,7 @@ repeated_word = word_1 * 5
 print(repeated_word)
 #Q8 Username creator 
 # Take a first name and birth year as input. Combine them to create a username, such as sakshi2005. Assume the birth year is entered as a string.
+
 firstName = input("Enter your first name: ")
 birth_yr = input("Enter your birth year: ")
 username = firstName + birth_yr
@@ -66,6 +67,10 @@ print("Your username is: ", username)
 
 #Q9 Reverse a word
 # Take a word as input and print it backward using slicing.
+
+word_3 = input("Enter a word: ")
+reverse_word = word[0, len(word_3), -1]
+print("Reversed word of", word_3, "is", reverse_word)
 
 #Q10 Extract the middle
 # Take a word with an odd number of characters and print only its middle character. For example, python should produce t.

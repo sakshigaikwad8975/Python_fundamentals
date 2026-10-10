@@ -41,7 +41,18 @@ else:
 #Q4 Login simulation
 # Compare a stored username and password against entered values. Print appropriate messages for correct and incorrect credentials.
 
-
+username = "gaikwadsakshi"
+password = "sakshi2005"
+entered_username = input("Enter the username: ")
+entered_password = input("Enter the password: ")
+if username == entered_username and password == entered_password:
+    print("Successful Login!!!")
+elif username == entered_username and password != entered_password:
+    print("Wrong Password")
+elif username != entered_username and password == entered_password:
+    print("Wrong username")
+else:
+    print("Wrong info!!!")
 
 #Q5 Triangle classifier
 # Given three side lengths, first check if they form a valid triangle, then classify it as equilateral, isosceles, or scalene.

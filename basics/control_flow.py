@@ -57,7 +57,20 @@ else:
 #Q5 Triangle classifier
 # Given three side lengths, first check if they form a valid triangle, then classify it as equilateral, isosceles, or scalene.
 
+a = int(input("Enter the first side: "))
+b = int(input("Enter the second side: "))
+c = int(input("Enter the third side: "))
 
+if (a + b > c) and (a + c > b) and (b + c > a):
+    print("It's a triangle")
+    if a == b and b == c:
+        print("It's an equilateral triangle")
+    elif a == b or b == c or a == c:
+        print("It's an isosceles triangle")
+    elif a != b or b != c or a != c:
+        print("It's a scalene triangle")
+else:
+    print("It's not an triangle") 
 
 #Q6 Ticket pricing
 # Calculate ticket prices based on age, student status, and whether the visit is on a weekend.

@@ -75,7 +75,9 @@ else:
 #Q6 Ticket pricing
 # Calculate ticket prices based on age, student status, and whether the visit is on a weekend.
 
-
+# age = int(input("Enter your age: "))
+# status = input("Are you a student: ")
+# if age <10 
 
 #Q7 BMI category
 # Calculate BMI using weight and height, then classify the result using standard BMI ranges.

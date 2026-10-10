@@ -82,7 +82,17 @@ else:
 #Q7 BMI category
 # Calculate BMI using weight and height, then classify the result using standard BMI ranges.
 
-
+weight = int(input("Enter weight in kg: "))
+height = int(input("Entner height is meters: "))
+bmi = weight / height
+if bmi <= 18.2:
+    print("Underweight")
+elif 18.5 <= bmi <= 24.9:
+    print("Healthy weight")
+elif 25.0 <= bmi <= 29.9:
+    print("Overweight")
+else:
+    print("Obesity")
 
 #Q8 ATM withdrawal
 # Simulate an ATM transaction. Check PIN, account balance, withdrawal amount, and whether the amount satisfies withdrawal constraints.

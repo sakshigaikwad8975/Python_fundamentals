@@ -32,7 +32,11 @@ else:
 #Q3 Voting eligibility
 # Check whether a person meets the minimum voting age.
 
-
+age = int(input("Enter you age: "))
+if age >= 18:
+    print("You are eligible for voting")
+else:
+    print("You are not eligible for voting.")
 
 #Q4 Login simulation
 # Compare a stored username and password against entered values. Print appropriate messages for correct and incorrect credentials.

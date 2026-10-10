@@ -1,10 +1,31 @@
 #Q1 Positive, negative, or zero
 # Classify a number as positive, negative, or zero.
-
+num1 = int(input("Enter a number: "))
+if num1 > 0:
+    print("The number is positive.")
+elif num1 < 0 :
+    print("The number is negative.")
+else:
+    print("The number is zero.")
 
 
 #Q2 Grade calculator
 # Assign a grade based on marks using a predefined grading scale.
+
+
+marks = int(input("Enter your marks: "))
+if marks >= 90:
+    print("Grade A+")
+elif marks >= 80:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+elif marks > 50:
+    print("Grade D")
+else:
+    print("Pass")
 
 
 

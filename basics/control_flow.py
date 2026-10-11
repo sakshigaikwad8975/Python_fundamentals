@@ -76,32 +76,30 @@ else:
 # Calculate ticket prices based on age, student status, and whether the visit is on a weekend.
 
 age = int(input("Enter your age: "))
-status = input("Are you a student: ")
-visit = input("Are you visiting on a weekdend: ")
+status = input("Are you student: ")
+visit = input("Are you visiting on a weekend: ")
+
 if age <= 12:
-    print("Your ticket price is 100 USD")
-    if status == "yes" or status == "Yes":
-        print("You have 50 USD discount")
-    if visit == "yes" or visit == "Yes":
-        print("You have to pay 30 USD extra for weekend visit.")
-    if age <= 12 and (status == "yes" or status == "Yes") and (visit == "yes" or visit == "Yes"):
-        print("Your total charge is: ", 100-50+30)
+    price = 100
+else:
+    price = 200
+
+if age <= 12:
+    print("Your ticket price is: ", price)
     if age <= 12 and (status == "yes" or status == "Yes"):
-            print("Your total charge is: ", 100-50)
+        print("Your ticket price is: ", price - 50)
     if age <= 12 and (visit == "yes" or visit == "Yes"):
-            print("Your total charge is: ", 100+30)
+        print("Your ticket price is: ", price + 30)
+    if age <= 12 and (status == "yes" or status == "Yes") and (visit == "yes" or status == "Yes"):
+        print("Your ticket price is: ", (price -50) + 30)
 elif age > 12:
-    print("Your ticket price is 200 USD.")
-    if status == "yes" or status == "Yes":
-        print("You have 50 USD discount")
-    if visit == "yes" or visit == "Yes":
-        print("You have to pay 30 USD extra for weekend visit.")
-    if age > 12 and (status == "yes" or status == "Yes") and (visit == "yes" or visit == "Yes"):
-            print("Your total charge is: ", 200-50+30)
+    print("Your ticket price is: ", price)
     if age > 12 and (status == "yes" or status == "Yes"):
-            print("Your total charge is: ", 100-50)
+        print("Your ticket price is: ", price - 50)
     if age > 12 and (visit == "yes" or visit == "Yes"):
-            print("Your total charge is: ", 100+30)
+        print("Your ticket price is: ", price + 30)
+    if age > 12 and (status == "yes" or status == "Yes") and (visit == "yes" or status == "Yes"):
+        print("Your ticket price is: ", (price -50) + 30)
 
 #Q7 BMI category
 # Calculate BMI using weight and height, then classify the result using standard BMI ranges.

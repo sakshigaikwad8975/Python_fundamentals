@@ -95,28 +95,40 @@ print("Your final ticket price is:", price)
 #Q7 BMI category
 # Calculate BMI using weight and height, then classify the result using standard BMI ranges.
 
-# weight = int(input("Enter weight in kg: "))
-# height = int(input("Entner height is meters: "))
-# bmi = weight / height
-# if bmi <= 18.2:
-#     print("Underweight")
-# elif 18.5 <= bmi <= 24.9:
-#     print("Healthy weight")
-# elif 25.0 <= bmi <= 29.9:
-#     print("Overweight")
-# else:
-#     print("Obesity")
+weight = float(input("Enter weight in kg: "))
+height = float(input("Entner height is meters: "))
+bmi = weight/ (height**2)
+if bmi <= 18.5:
+    print("Underweight")
+elif 18.5 <= bmi <= 24.9:
+    print("Healthy weight")
+elif 25 <= bmi <= 29.9:
+    print("Overweight")
+else:
+    print("Obesity")
 
 #Q8 ATM withdrawal
 # Simulate an ATM transaction. Check PIN, account balance, withdrawal amount, and whether the amount satisfies withdrawal constraints.
 
+pin = 180905
+account_balance = 80000
+withdrawal_constraint = 50000
 entered_pin = int(input("Enter PIN: "))
+withdrawl_amt = int(input("Enter withdrawal amout: "))
 
+if entered_pin == pin:
+    if withdrawl_amt >= withdrawal_constraint:
+        print("Transaction Successful!!!")
+    else:
+        print("Entered amount exceed withdrawal constraint!!!")
+else:
+    print("Wrong PIN!!! Try again.")
 
 #Q9 Rock-paper-scissors
 # Build a single-round game using nested conditionals. Compare the user's choice with a predefined computer choice.
 
-
+comp_choice = "rock"
+user_choice = int("Enter you choice: ")
 
 # Q10 Smart admission system
 # Determine admission eligibility using marks, entrance exam scores, and category-specific criteria. Clearly handle overlapping conditions.

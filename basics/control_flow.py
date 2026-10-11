@@ -98,11 +98,11 @@ print("Your final ticket price is:", price)
 weight = float(input("Enter weight in kg: "))
 height = float(input("Entner height is meters: "))
 bmi = weight/ (height**2)
-if bmi <= 18.5:
+if bmi < 18.5:
     print("Underweight")
-elif 18.5 <= bmi <= 24.9:
+elif 18.5 <= bmi < 25:
     print("Healthy weight")
-elif 25 <= bmi <= 29.9:
+elif 25 <= bmi <= 30:
     print("Overweight")
 else:
     print("Obesity")

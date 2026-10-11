@@ -114,13 +114,17 @@ pin = 180905
 account_balance = 80000
 withdrawal_constraint = 50000
 entered_pin = int(input("Enter PIN: "))
-withdrawl_amt = int(input("Enter withdrawal amout: "))
+withdrawal_amt = int(input("Enter withdrawal amout: "))
 
 if entered_pin == pin:
-    if withdrawl_amt >= withdrawal_constraint:
-        print("Transaction Successful!!!")
+    if withdrawal_amt <= 0:
+        print("Invalid amount!!!")
+    elif withdrawal_amt >= account_balance:
+        print("Amount exceeds account balance!!!")
+    elif withdrawal_amt > withdrawal_constraint:
+        print("Entered amount exceeds withdrawal constraint!!!")
     else:
-        print("Entered amount exceed withdrawal constraint!!!")
+        print("Transaction Successful!!!")
 else:
     print("Wrong PIN!!! Try again.")
 
@@ -132,3 +136,4 @@ user_choice = int("Enter you choice: ")
 
 # Q10 Smart admission system
 # Determine admission eligibility using marks, entrance exam scores, and category-specific criteria. Clearly handle overlapping conditions.
+

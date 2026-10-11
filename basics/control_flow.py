@@ -84,22 +84,13 @@ if age <= 12:
 else:
     price = 200
 
-if age <= 12:
-    print("Your ticket price is: ", price)
-    if age <= 12 and (status == "yes" or status == "Yes"):
-        print("Your ticket price is: ", price - 50)
-    if age <= 12 and (visit == "yes" or visit == "Yes"):
-        print("Your ticket price is: ", price + 30)
-    if age <= 12 and (status == "yes" or status == "Yes") and (visit == "yes" or status == "Yes"):
-        print("Your ticket price is: ", (price -50) + 30)
-elif age > 12:
-    print("Your ticket price is: ", price)
-    if age > 12 and (status == "yes" or status == "Yes"):
-        print("Your ticket price is: ", price - 50)
-    if age > 12 and (visit == "yes" or visit == "Yes"):
-        print("Your ticket price is: ", price + 30)
-    if age > 12 and (status == "yes" or status == "Yes") and (visit == "yes" or status == "Yes"):
-        print("Your ticket price is: ", (price -50) + 30)
+if status == "yes" or status == "Yes":
+    price -= 50
+
+if visit == "yes" or visit == "Yes":
+    price += 30
+
+print("Your final ticket price is:", price)
 
 #Q7 BMI category
 # Calculate BMI using weight and height, then classify the result using standard BMI ranges.

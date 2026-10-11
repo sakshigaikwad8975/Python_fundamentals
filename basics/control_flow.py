@@ -75,28 +75,53 @@ else:
 #Q6 Ticket pricing
 # Calculate ticket prices based on age, student status, and whether the visit is on a weekend.
 
-# age = int(input("Enter your age: "))
-# status = input("Are you a student: ")
-# if age <10 
+age = int(input("Enter your age: "))
+status = input("Are you a student: ")
+visit = input("Are you visiting on a weekdend: ")
+if age <= 12:
+    print("Your ticket price is 100 USD")
+    if status == "yes" or status == "Yes":
+        print("You have 50 USD discount")
+    if visit == "yes" or visit == "Yes":
+        print("You have to pay 30 USD extra for weekend visit.")
+    if age <= 12 and (status == "yes" or status == "Yes") and (visit == "yes" or visit == "Yes"):
+        print("Your total charge is: ", 100-50+30)
+    if age <= 12 and (status == "yes" or status == "Yes"):
+            print("Your total charge is: ", 100-50)
+    if age <= 12 and (visit == "yes" or visit == "Yes"):
+            print("Your total charge is: ", 100+30)
+elif age > 12:
+    print("Your ticket price is 200 USD.")
+    if status == "yes" or status == "Yes":
+        print("You have 50 USD discount")
+    if visit == "yes" or visit == "Yes":
+        print("You have to pay 30 USD extra for weekend visit.")
+    if age > 12 and (status == "yes" or status == "Yes") and (visit == "yes" or visit == "Yes"):
+            print("Your total charge is: ", 200-50+30)
+    if age > 12 and (status == "yes" or status == "Yes"):
+            print("Your total charge is: ", 100-50)
+    if age > 12 and (visit == "yes" or visit == "Yes"):
+            print("Your total charge is: ", 100+30)
 
 #Q7 BMI category
 # Calculate BMI using weight and height, then classify the result using standard BMI ranges.
 
-weight = int(input("Enter weight in kg: "))
-height = int(input("Entner height is meters: "))
-bmi = weight / height
-if bmi <= 18.2:
-    print("Underweight")
-elif 18.5 <= bmi <= 24.9:
-    print("Healthy weight")
-elif 25.0 <= bmi <= 29.9:
-    print("Overweight")
-else:
-    print("Obesity")
+# weight = int(input("Enter weight in kg: "))
+# height = int(input("Entner height is meters: "))
+# bmi = weight / height
+# if bmi <= 18.2:
+#     print("Underweight")
+# elif 18.5 <= bmi <= 24.9:
+#     print("Healthy weight")
+# elif 25.0 <= bmi <= 29.9:
+#     print("Overweight")
+# else:
+#     print("Obesity")
 
 #Q8 ATM withdrawal
 # Simulate an ATM transaction. Check PIN, account balance, withdrawal amount, and whether the amount satisfies withdrawal constraints.
 
+entered_pin = int(input("Enter PIN: "))
 
 
 #Q9 Rock-paper-scissors

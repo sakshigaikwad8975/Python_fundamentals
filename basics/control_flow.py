@@ -113,20 +113,25 @@ else:
 pin = 180905
 account_balance = 80000
 withdrawal_constraint = 50000
+
 entered_pin = int(input("Enter PIN: "))
-withdrawal_amt = int(input("Enter withdrawal amout: "))
 
 if entered_pin == pin:
+    withdrawal_amt = int(input("Enter withdrawal amount: "))
+
     if withdrawal_amt <= 0:
         print("Invalid amount!!!")
-    elif withdrawal_amt >= account_balance:
+    elif withdrawal_amt > account_balance:
         print("Amount exceeds account balance!!!")
     elif withdrawal_amt > withdrawal_constraint:
         print("Entered amount exceeds withdrawal constraint!!!")
     else:
+        account_balance -= withdrawal_amt
         print("Transaction Successful!!!")
+        print("Remaining balance:", account_balance)
 else:
     print("Wrong PIN!!! Try again.")
+
 
 #Q9 Rock-paper-scissors
 # Build a single-round game using nested conditionals. Compare the user's choice with a predefined computer choice.

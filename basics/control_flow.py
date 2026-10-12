@@ -146,7 +146,7 @@ if user_choice == "rock" or user_choice == "scissor" or user_choice == "paper":
     elif user_choice == "paper":
         print("User won!!!")
 else:
-    ("Wrong input!!!")
+    print("Wrong input!!!")
 
 # Q10 Smart admission system
 # Determine admission eligibility using marks, entrance exam scores, and category-specific criteria. Clearly handle overlapping conditions.

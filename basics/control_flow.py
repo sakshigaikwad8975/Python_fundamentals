@@ -177,5 +177,5 @@ elif category == "SC/ST":
     if (marks >= min_marks) and (min_ent_marks >= entrance_marks):
         print("Eligible for addmission!!!")
     else: 
-        print("Not eligible for addmission!!!")
+        print("Not eligible for admission!!!")
         

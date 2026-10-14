@@ -151,3 +151,31 @@ else:
 # Q10 Smart admission system
 # Determine admission eligibility using marks, entrance exam scores, and category-specific criteria. Clearly handle overlapping conditions.
 
+min_ent_marks = 50
+marks = int(input("Enter your marks: "))
+entrance_marks = int(input("Enter your entrance exam score: "))
+category = input("Enter your category: ")
+if category == "General":
+    min_marks = 80
+elif category == "OBC":
+    min_marks = 70
+elif category == "SC/ST":
+    min_marks = 60
+else:
+    print("Invalid Input!!!")
+if category == "General":
+    if (marks >= min_marks) and (min_ent_marks >= entrance_marks):
+        print("Eligible for addmission!!!")
+    else: 
+        print("Not eligible for addmission!!!")
+elif category == "OBC":
+    if (marks >= min_marks) and (min_ent_marks >= entrance_marks):
+        print("Eligible for addmission!!!")
+    else: 
+        print("Not eligible for addmission!!!")
+elif category == "SC/ST":
+    if (marks >= min_marks) and (min_ent_marks >= entrance_marks):
+        print("Eligible for addmission!!!")
+    else: 
+        print("Not eligible for addmission!!!")
+        

@@ -1,0 +1,47 @@
+#Q1 List operations
+# Create a list of 10 numbers. Print the first, last, and middle elements. Add, remove, and update elements.
+
+
+
+#Q2 Shopping list
+# Create a shopping list. Allow the user to add an item, remove an item, and view the updated list.
+
+
+
+#Q3 Find maximum and minimum
+# Find the largest and smallest elements of a list without using max() or min().
+
+
+
+#Q4 Remove duplicates
+# Create a new list with duplicate values removed while preserving the original order.
+
+
+
+#Q5 Separate even and odd
+# Given a list of integers, create two separate lists for even and odd numbers.
+
+
+
+#Q6 Second largest
+# Find the second-largest distinct number in a list without sorting it.
+
+
+
+#Q7 List rotation
+# Rotate a list to the right by k positions. Try a solution using slicing and another using loops.
+
+
+
+#Q8 Matrix addition
+# Represent two matrices as nested lists and calculate their element-wise sum.
+
+
+
+#Q9 Flatten a nested list
+# Convert a list of lists, such as [[1, 2], [3, 4], [5]], into a single flat list.
+
+
+
+#Q10 Leaderboard
+# Given a list of student names and a corresponding list of scores, produce a sorted leaderboard with rankings. Handle tied scores.

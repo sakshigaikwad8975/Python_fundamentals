@@ -13,7 +13,18 @@ print("Updated list is: ", num)
 #Q2 Shopping list
 # Create a shopping list. Allow the user to add an item, remove an item, and view the updated list.
 
-
+shopping_list = ["apple", "honey", "butter", "potato", "yogurt", "pineapple", "pastry"]
+add_items = input("Do you want to add items?")
+if add_items == "yes" or add_items == "Yes":
+    updated_list = input("Enter items: ")
+    shopping_list.append(updated_list)
+else:
+    print("No item to add")
+remove_items = input("Do you want to remove items?")
+if remove_items == "yes" or remove_items == "Yes":
+    updated_list = input("Enter items: ")
+    shopping_list.remove(updated_list)
+print("Here's the final list: ", shopping_list)
 
 #Q3 Find maximum and minimum
 # Find the largest and smallest elements of a list without using max() or min().

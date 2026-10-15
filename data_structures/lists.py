@@ -29,7 +29,9 @@ print("Here's the final list: ", shopping_list)
 #Q3 Find maximum and minimum
 # Find the largest and smallest elements of a list without using max() or min().
 
-
+num_list = [12, 69, 4, 7, 8, 10]
+num_list.sort()
+print("The largest element is list is ", num_list[0], " and smallest element is ", num_list[5])
 
 #Q4 Remove duplicates
 # Create a new list with duplicate values removed while preserving the original order.

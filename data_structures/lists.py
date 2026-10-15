@@ -3,11 +3,11 @@
 
 num = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 print("First element of list is: ", num[0])
-print("Last element of list is: ", num[len-1])
-updated_num = num.append(110)
-print("Updated num is: ", updated_num)
-updated_num = num.remove(30)
-print("Updated list is: ", updated_num)
+print("Last element of list is: ", num[9])
+num.append(110)
+print("Updated num is: ", num)
+num.remove(30)
+print("Updated list is: ", num)
 
 
 #Q2 Shopping list

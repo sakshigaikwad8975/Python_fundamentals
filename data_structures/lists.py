@@ -45,12 +45,11 @@ print("The largest element is list is ", num_list[0], " and smallest element is 
 int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 even_list = []
 odd_list = []
-# list_idx = 0
 for idx in int_list:
-    if int_list[0] % 2 == 0:
-        even_list += int_list[0]
+    if idx % 2 == 0:
+        even_list.append(idx)
     else:
-        odd_list += int_list[0]
+        odd_list.append(idx)
 print("Even numbers list: ", even_list)
 print("Odd numbers list: ", odd_list)
 

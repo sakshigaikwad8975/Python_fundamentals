@@ -35,13 +35,24 @@ print("The largest element is list is ", num_list[0], " and smallest element is 
 
 #Q4 Remove duplicates
 # Create a new list with duplicate values removed while preserving the original order.
-
-
+# org_list = [1, 2, 2, 3, 4, 4, 1]
+# new_list = []
+# for num in org_list:
+#     if num
 
 #Q5 Separate even and odd
 # Given a list of integers, create two separate lists for even and odd numbers.
-
-
+int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_list = []
+odd_list = []
+# list_idx = 0
+for idx in int_list:
+    if int_list[0] % 2 == 0:
+        even_list += int_list[0]
+    else:
+        odd_list += int_list[0]
+print("Even numbers list: ", even_list)
+print("Odd numbers list: ", odd_list)
 
 #Q6 Second largest
 # Find the second-largest distinct number in a list without sorting it.

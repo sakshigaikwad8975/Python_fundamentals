@@ -116,5 +116,6 @@ else:
 # Take a word as input and print each character on a separate line using a for loop and indexing.
 
 word5 = input("Enter a word: ")
-for word in word5:
-    print(word)
+
+for i in range(len(word5)):
+    print(word5[i])

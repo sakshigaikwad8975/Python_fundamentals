@@ -19,7 +19,7 @@ print(type(profession))
 
 val_1 = 10
 val_2 = 5
-sum = val_1 + val_2
+total = val_1 + val_2
 difference = val_1 - val_2
 product = val_1 * val_2
 division = val_1 / val_2

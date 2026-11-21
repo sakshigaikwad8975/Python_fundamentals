@@ -55,8 +55,9 @@ print("Odd numbers list: ", odd_list)
 
 #Q6 Second largest
 # Find the second-largest distinct number in a list without sorting it.
-
-
+my_list = [1, 8, 2, 4, 6, 9, 7, 10]
+for idx in my_list:
+    
 
 #Q7 List rotation
 # Rotate a list to the right by k positions. Try a solution using slicing and another using loops.

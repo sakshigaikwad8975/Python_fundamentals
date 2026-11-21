@@ -68,13 +68,13 @@ subtotal3 = price3 * quantity3
 
 total_bill = subtotal1 + subtotal2 + subtotal3
 
-avg_bill = (price1 + price2 + price3) /9
+avg_price = total_bill / (quantity1 + quantity2 + quantity3)
 
 print("Subtotal of 1st item: ", subtotal1, "USD")
 print("Subtotal of 2nd item: ", subtotal2, "USD")
 print("Subtotal of 3rd item: ", subtotal3, "USD")
 print("Total bill of 3 items is: ", total_bill, "USD")
-print("Average item price is: ", avg_bill, "USD")
+print("Average item price is: ", avg_price, "USD")
 
 #Q6 Time converter
 # Store a number of seconds and convert it into hours, minutes, and remaining seconds.

@@ -43,12 +43,17 @@ else:
 # Check whether a person is eligible for a driving license based on age and whether they have a learner's permit.
 
 age = int(input("Enter your age: "))
-permit = input("Do you have learners perimit: ")
-if age >= 18 and (permit == "Yes" or permit == "yes"):
+permit = input("Do you have a learner's permit? ")
+
+if age >= 18:
     print("Eligible for learner's permit.")
-    print("Eligible for driving license.")
+
+    if permit == "Yes" or permit == "yes":
+        print("Eligible for driving license.")
+    else:
+        print("Not eligible for driving license yet.")
 else:
-    print("Not eligible for driving liscense and learner's permit.")
+    print("Not eligible for driving license.")
 
 #Q6 Range validation 
 # Check whether a number lies between 10 and 100 inclusive using chained comparisons.

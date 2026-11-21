@@ -26,7 +26,7 @@ division = val_1 / val_2
 remainder = val_1 % val_2
 quotient = val_1 // val_2
 
-print("Sum: ", sum)
+print("Sum: ", total)
 print("Difference: ", difference)
 print("Product: ", product)
 print("Division: ", division)
@@ -46,10 +46,13 @@ print("Conversion of ", temp, "degree Celsius to Fahrenheit is", fahrenheit, "de
 
 num1 = 6
 num2 = 7
-temp = num1
-num1 = num2
-num2 = temp
-print (num1, " ", num2)
+
+num1 = num1 + num2
+num2 = num1 - num2
+num1 = num1 - num2
+
+print("Num1:", num1)
+print("Num2:", num2)
 
 #Q5 Shopping Bill
 # Store the prices and quantities of three products. Calculate each subtotal, the total bill, and the average item price.

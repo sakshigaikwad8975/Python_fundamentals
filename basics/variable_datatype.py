@@ -57,7 +57,7 @@ print("Num2:", num2)
 #Q5 Shopping Bill
 # Store the prices and quantities of three products. Calculate each subtotal, the total bill, and the average item price.
 
-price1 = 150 
+price1 = 150
 price2 = 500
 price3 = 750
 
@@ -71,13 +71,14 @@ subtotal3 = price3 * quantity3
 
 total_bill = subtotal1 + subtotal2 + subtotal3
 
-avg_price = total_bill / (quantity1 + quantity2 + quantity3)
+total_quantity = quantity1 + quantity2 + quantity3
+avg_price = total_bill / total_quantity
 
-print("Subtotal of 1st item: ", subtotal1, "USD")
-print("Subtotal of 2nd item: ", subtotal2, "USD")
-print("Subtotal of 3rd item: ", subtotal3, "USD")
-print("Total bill of 3 items is: ", total_bill, "USD")
-print("Average item price is: ", avg_price, "USD")
+print("Subtotal of 1st item:", subtotal1, "USD")
+print("Subtotal of 2nd item:", subtotal2, "USD")
+print("Subtotal of 3rd item:", subtotal3, "USD")
+print("Total bill:", total_bill, "USD")
+print("Average price per item:", avg_price, "USD")
 
 #Q6 Time converter
 # Store a number of seconds and convert it into hours, minutes, and remaining seconds.
